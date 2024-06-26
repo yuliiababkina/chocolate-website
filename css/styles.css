@@ -1,0 +1,184 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.header-logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.header-logo-italic {
+    font-style: italic;
+}
+
+.header-navbar-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111;
+}
+
+.hero-title {
+    background-color: #111;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.hero-button {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+}
+
+.section-title-color {
+    color: #fd9222;
+}
+
+.benefits-section {
+    background-color: #1e1823;
+}
+
+.benefits-list h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.benefits-list p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.ingredients-section-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+}
+
+.ingredients-list h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.made-section h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #111;
+}
+
+.made-section-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111;
+}
+
+.reviews-list h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #111;
+}
+
+.reviews-list p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.review-button {
+    font-weight: 600;
+    font-size: 18px;
+    color: #111;
+}
+
+.footer {
+    background-color: #1e1823;
+}
+
+.footer-bold-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 121%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.contact-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    color: #fff;
+}
+
+.footer-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.footer-subscibe-button {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-accent-color {
+    color: #fd9222;
+}
+
+.contacts {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
