@@ -25,13 +25,16 @@
             <div class="container header-container">
                 <nav class="header-navigation">
                     <a class="header-logo" href="/">
-                        <span class="header-logo-italic">Simply</span> Chocolate
+                        <span class="logo-wrapper"
+                            ><span class="header-logo-italic">Simply</span>
+                            Chocolate</span
+                        >
                         <svg class="logo-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-logo"></use>
                         </svg>
                     </a>
                     <ul class="header-navbar">
-                        <li class="header-navbar-item">
+                        <li class="header-navbar-item current">
                             <a class="header-navbar-link" href="/">Home</a>
                         </li>
                         <li class="header-navbar-item">
@@ -77,6 +80,12 @@
                         </a>
                     </li>
                 </ul>
+
+                <button class="burger-menu" type="button">
+                    <svg class="burger-menu-icon" width="28" height="28">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
@@ -90,8 +99,23 @@
                         <button class="hero-button" type="button">
                             Buy now
                         </button>
-                        <a class="made-anchor" href="#made">How it's made</a>
-                        <a class="scroll-anchor" href="#">scroll down</a>
+                        <a class="made-section-anchor" href="#made"
+                            >How it's made</a
+                        >
+                        <a class="scroll-down-anchor" href="#"
+                            >scroll down
+                            <span class="scroll-down-wrapper">
+                                <svg
+                                    class="scroll-down-icon"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-scroll-down"
+                                    ></use>
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -110,8 +134,8 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3>Unsurpassed taste</h3>
-                            <p>
+                            <h3 class="benefits-subtitle">Unsurpassed taste</h3>
+                            <p class="benefits-text">
                                 Crafted with the finest quality cocoa beans and
                                 a dedication to perfection, each bite is a
                                 decadent experience that simply cannot be
@@ -132,8 +156,8 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3>Affordable price</h3>
-                            <p>
+                            <h3 class="benefits-subtitle">Affordable price</h3>
+                            <p class="benefits-text">
                                 Indulge in high-quality chocolate without
                                 breaking the bank with Simply Chocolate's
                                 selection of affordable treats. Enjoy
@@ -155,8 +179,8 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3>Own production</h3>
-                            <p>
+                            <h3 class="benefits-subtitle">Own production</h3>
+                            <p class="benefits-text">
                                 We take pride in our own production process,
                                 ensuring that every step is carefully crafted to
                                 perfection. From selecting the finest
@@ -182,24 +206,38 @@
                     </p>
                     <ul class="ingredients-list">
                         <li class="ingredients-item orange-bg-card">
-                            <img
-                                src="./images/img-milk-chocolate.png"
-                                alt="Milk chocolate bar"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/comp-img/milk-chocolate-@1x.png 1x,
+                                        ./images/comp-img/milk-chocolate-@2x.png 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/comp-img/milk-chocolate-@1x.png"
+                                    alt="Milk chocolate bar"
+                                />
+                            </picture>
                             <h3 class="ingredients-item-caption">
                                 Milk chocolate
                             </h3>
                             <div class="card-overlay">
                                 <h3 class="thumb-title">Milk chocolate</h3>
-                                <button class="thumb-btn colored" type="button">
-                                    Chocolate
-                                </button>
-                                <button
-                                    class="thumb-btn transparent"
-                                    type="button"
-                                >
-                                    The benefits
-                                </button>
+                                <div class="btn-wrapper">
+                                    <button
+                                        class="thumb-btn colored"
+                                        type="button"
+                                    >
+                                        Chocolate
+                                    </button>
+                                    <button
+                                        class="thumb-btn transparent"
+                                        type="button"
+                                    >
+                                        The benefits
+                                    </button>
+                                </div>
                                 <p class="thumb-text">
                                     Milk chocolate is a solid chocolate
                                     confectionery containing cocoa, sugar and
@@ -213,10 +251,19 @@
                             </div>
                         </li>
                         <li class="ingredients-item white-bg-card">
-                            <img
-                                src="./images/img-milk.png"
-                                alt="Bottle of milk"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/comp-img/milk-@1x.png 1x,
+                                        ./images/comp-img/milk-@2x.png 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/comp-img/milk-@1x.png"
+                                    alt="Bottle of milk"
+                                />
+                            </picture>
                             <h3
                                 class="ingredients-item-caption dark-color-text"
                             >
@@ -224,15 +271,20 @@
                             </h3>
                             <div class="card-overlay">
                                 <h3 class="thumb-title">Milk</h3>
-                                <button class="thumb-btn colored" type="button">
-                                    Milk
-                                </button>
-                                <button
-                                    class="thumb-btn transparent"
-                                    type="button"
-                                >
-                                    The benefits
-                                </button>
+                                <div class="btn-wrapper">
+                                    <button
+                                        class="thumb-btn colored"
+                                        type="button"
+                                    >
+                                        Milk
+                                    </button>
+                                    <button
+                                        class="thumb-btn transparent"
+                                        type="button"
+                                    >
+                                        The benefits
+                                    </button>
+                                </div>
                                 <p class="thumb-text">
                                     Milk is a white liquid food produced by the
                                     mammary glands of mammals. It is the primary
@@ -246,19 +298,36 @@
                             </div>
                         </li>
                         <li class="ingredients-item dark-bg-card">
-                            <img src="./images/img-nuts.png" alt="Hazelnuts" />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/comp-img/nuts-@1x.png 1x,
+                                        ./images/comp-img/nuts-@2x.png 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/comp-img/nuts-@1x.png"
+                                    alt="Hazelnuts"
+                                />
+                            </picture>
                             <h3 class="ingredients-item-caption">Nuts</h3>
                             <div class="card-overlay">
                                 <h3 class="thumb-title">Nuts</h3>
-                                <button class="thumb-btn colored" type="button">
-                                    Nuts
-                                </button>
-                                <button
-                                    class="thumb-btn transparent"
-                                    type="button"
-                                >
-                                    The benefits
-                                </button>
+                                <div class="btn-wrapper">
+                                    <button
+                                        class="thumb-btn colored"
+                                        type="button"
+                                    >
+                                        Nuts
+                                    </button>
+                                    <button
+                                        class="thumb-btn transparent"
+                                        type="button"
+                                    >
+                                        The benefits
+                                    </button>
+                                </div>
                                 <p class="thumb-text">
                                     Almonds, pistachios, and walnuts are some
                                     types of nuts that contain healthy
@@ -272,10 +341,19 @@
                             </div>
                         </li>
                         <li class="ingredients-item white-bg-card">
-                            <img
-                                src="./images/img-cocoa-beans.png"
-                                alt="Cocoa beans"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/comp-img/cocao-beans-@1x.png 1x,
+                                        ./images/comp-img/cocao-beans-@2x.png 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/comp-img/cocao-beans-@1x.png"
+                                    alt="Cocoa beans"
+                                />
+                            </picture>
                             <h3
                                 class="ingredients-item-caption dark-color-text"
                             >
@@ -285,15 +363,20 @@
                                 <h3 class="thumb-title">
                                     Semi - sweet chocolate
                                 </h3>
-                                <button class="thumb-btn colored" type="button">
-                                    Sweet chocolate
-                                </button>
-                                <button
-                                    class="thumb-btn transparent"
-                                    type="button"
-                                >
-                                    The benefits
-                                </button>
+                                <divc class="btn-wrapper">
+                                    <button
+                                        class="thumb-btn colored"
+                                        type="button"
+                                    >
+                                        Sweet chocolate
+                                    </button>
+                                    <button
+                                        class="thumb-btn transparent"
+                                        type="button"
+                                    >
+                                        The benefits
+                                    </button>
+                                </divc>
                                 <p class="thumb-text">
                                     Semi-sweet chocolate has a cocoa solid
                                     content of 35 to 65%. One of the best ways
@@ -315,13 +398,31 @@
                         How it's <span class="section-title-color">made?</span>
                     </h2>
                     <div class="made-flex">
-                        <img
-                            src="./images/img-how-it-is-made-section.jpg"
-                            alt="Trickle of melted dark chocolate"
-                            width="600"
-                        />
-                        <div class="made-list-flex">
-                            <h3>
+                        <div class="made-img-wrapper">
+                            <picture>
+                                <source
+                                    media="(max-width:767px)"
+                                    srcset="
+                                        ./images/made-img/made-mob-@1x.jpg 1x,
+                                        ./images/made-img/made-mob-@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                        ./images/made-img/made-@1x.jpg 1x,
+                                        ./images/made-img/made-@2x.jpg 2x
+                                    "
+                                />
+                                <img
+                                    src="./images/made-img/made-@1x.jpg"
+                                    alt="Trickle of melted dark chocolate"
+                                    width="600"
+                                />
+                            </picture>
+                        </div>
+                        <div class="made-text-wrapper">
+                            <h3 class="made-subtitle">
                                 Try our chocolates today and discover the
                                 perfect balance of flavor
                             </h3>
@@ -363,13 +464,23 @@
                     <ul class="reviews-list">
                         <li class="reviews-item">
                             <div class="img-wrapper">
-                                <img
-                                    src="./images/img-review-1.jpg"
-                                    alt="Young redhead girl"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/reviews-img/img-1-@1x.jpg 1x,
+                                            ./images/reviews-img/img-1-@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images/reviews-img/img-1-@1x.jpg"
+                                        alt="Young redhead girl"
+                                    />
+                                </picture>
                             </div>
-                            <h3>Victoria Dobrzhanska</h3>
-                            <p>
+                            <h3 class="reviews-subtitle">
+                                Victoria Dobrzhanska
+                            </h3>
+                            <p class="reviews-text">
                                 I love this chocolate bar. Perfect combination
                                 of light crispy wafer, covered in a thin layer
                                 chocolate.
@@ -377,13 +488,22 @@
                         </li>
                         <li class="reviews-item">
                             <div class="img-wrapper">
-                                <img
-                                    src="./images/img-review-2.jpg"
-                                    alt="Young redhead man"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/reviews-img/img-2-@1x.jpg 1x,
+                                            ./images/reviews-img/img-2-@2x.jpg 2x
+                                        "
+                                    />
+
+                                    <img
+                                        src="./images/reviews-img/img-2-@1x.jpg"
+                                        alt="Young redhead man"
+                                    />
+                                </picture>
                             </div>
-                            <h3>Nazar Babenko</h3>
-                            <p>
+                            <h3 class="reviews-subtitle">Nazar Babenko</h3>
+                            <p class="reviews-text">
                                 This chocolate confection is a delight! A
                                 delight! The wafer is light and crisp, the
                                 hazelnut cream is smooth, and the chocolate is
@@ -392,19 +512,28 @@
                         </li>
                         <li class="reviews-item">
                             <div class="img-wrapper">
-                                <img
-                                    src="./images/img-review-3.jpg"
-                                    alt="Young light girl"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images//reviews-img/img-3-@1x.jpg 1x,
+                                            ./images//reviews-img/img-3-@2x.jpg 2x
+                                        "
+                                    />
+                                    <img
+                                        src="./images//reviews-img/img-3-@1x.jpg"
+                                        alt="Young light girl"
+                                    />
+                                </picture>
                             </div>
-                            <h3>Olena Kampusch</h3>
-                            <p>
+                            <h3 class="reviews-subtitle">Olena Kampusch</h3>
+                            <p class="reviews-text">
                                 Chocolate is a family favourite treat. Love the
                                 delicious smooth chocolate and the creaminess
                                 inside. The wafer is soft but crunchy.
                             </p>
                         </li>
                     </ul>
+
                     <button class="review-button" type="button">
                         Leave a review
                     </button>
@@ -413,8 +542,8 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="footer-flex">
-                    <p class="footer-bold-text">
+                <div class="footer-top-wrapper">
+                    <p class="footer-text-title">
                         <span class="footer-accent-color">Chocolate</span> a
                         delicious cure for a bad day
                     </p>
@@ -438,7 +567,7 @@
                         </ul>
                     </address>
                 </div>
-                <div class="footer-navbar-flex">
+                <div class="footer-bottom-wrapper">
                     <ul class="footer-list">
                         <li class="footer-item">
                             <a class="footer-link" href="">Home</a>
@@ -456,16 +585,16 @@
                     </ul>
 
                     <form class="footer-form">
-                        <label for="user-email"></label>
-                        <input
-                            type="email"
-                            name="user-email"
-                            class="footer-input"
-                            id="user-email"
-                            placeholder="Enter your email"
-                        />
+                        <label class="footer-label" for="user-email">
+                            <input
+                                type="email"
+                                name="user-email"
+                                class="footer-input"
+                                id="user-email"
+                                placeholder="Enter your email"
+                            />
                         </label>
-                        <button class="footer-subscibe-button" type="button">
+                        <button class="footer-subscibe-button" type="submit">
                             Subscribe
                         </button>
                     </form>
