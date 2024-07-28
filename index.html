@@ -81,11 +81,84 @@
                     </li>
                 </ul>
 
-                <button class="burger-menu" type="button">
+                <button class="burger-menu" type="button" data-menu-open>
                     <svg class="burger-menu-icon" width="28" height="28">
                         <use href="./images/icons.svg#icon-burger"></use>
                     </svg>
                 </button>
+            </div>
+
+            <div class="mobile-menu is-open" data-menu>
+                <div>
+                    <button
+                        class="mobile-menu-close-btn"
+                        type="button"
+                        data-menu-close
+                    >
+                        <svg
+                            class="mobile-menu-close-icon"
+                            width="28"
+                            height="28"
+                        >
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu-navbar">
+                        <ul class="mobile-menu-list">
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="/">Home</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="#"
+                                    >How it's made?</a
+                                >
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="#"
+                                    >Chocolate is loved</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <ul class="mobile-menu-social-list">
+                    <li class="mobile-menu-social-item">
+                        <a
+                            class="mobile-menu-social-link"
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="no-referrer noopener"
+                        >
+                            <svg
+                                class="mobile-menu-socail-icon"
+                                width="22"
+                                height="22"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-instagram"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-social-item">
+                        <a
+                            class="mobile-menu-social-link"
+                            href="https://x.com/"
+                            target="_blank"
+                            rel="no-referrer noopener"
+                        >
+                            <svg
+                                class="mobile-menu-socail-icon"
+                                width="22"
+                                height="22"
+                            >
+                                <use
+                                    href="./images/icons.svg#icon-twitter"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
         <main>
@@ -551,18 +624,16 @@
                         <p class="contact-text">Contact us</p>
                         <ul class="contact-list">
                             <li class="contact-item">
-                                <a
-                                    class="contact-link"
-                                    href="tel:+380684439426"
-                                ></a
-                                >+380 (68) 443-94-26
+                                <a class="contact-link" href="tel:+380684439426"
+                                    >+380 (68) 443-94-26</a
+                                >
                             </li>
                             <li class="contact-item">
                                 <a
                                     class="contact-link"
                                     href="mailto:simplychoc@gmail.com"
-                                ></a
-                                >simplychoc@gmail.com
+                                    >simplychoc@gmail.com</a
+                                >
                             </li>
                         </ul>
                     </address>
@@ -601,5 +672,111 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-backdrop">
+            <div class="modal">
+                <button class="modal-close-btn" type="button">
+                    <svg class="modal-close-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <p class="modal-text-title">
+                    leave a review about
+                    <span class="modal-accent">our chocolate</span>
+                </p>
+
+                <form class="modal-form">
+                    <div class="form-field">
+                        <label class="form-label" for="user-name">Name</label>
+                        <div class="input-wrapper">
+                            <input
+                                class="form-input"
+                                type="text"
+                                id="user-name"
+                                name="user-name"
+                            />
+                            <svg class="input-icon" width="17" height="17">
+                                <use href="./images/icons.svg#icon-user"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label" for="user-email">Email</label>
+                        <div class="input-wrapper">
+                            <input
+                                class="form-input"
+                                type="email"
+                                id="user-email"
+                                name="user-email"
+                            />
+                            <svg class="input-icon" width="17" height="17">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label" for="user-phone"
+                            >Phone number</label
+                        >
+                        <div class="input-wrapper">
+                            <input
+                                class="form-input"
+                                type="tel"
+                                id="user-phone"
+                                name="user-phone"
+                            />
+                            <svg class="input-icon" width="17" height="17">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form-field textarea">
+                        <label class="form-label" for="user-comment"
+                            >Comment</label
+                        >
+                        <textarea
+                            class="form-textarea"
+                            name="user-comment"
+                            id="user-comment"
+                            placeholder="Enter text"
+                        ></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input
+                            class="input-checkbox visually-hidden"
+                            type="checkbox"
+                            name="user-policy"
+                            id="user-policy"
+                            value="true"
+                        />
+                        <label class="form-label" for="user-policy">
+                            <span class="custom-checkbox">
+                                <svg
+                                    class="checkbox-icon"
+                                    width="20"
+                                    height="20"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-checkbox-mob"
+                                    ></use>
+                                </svg>
+                            </span>
+                            <span class="custom-checkbox-text">
+                                I accept the terms and conditions of the
+                                <a
+                                    class="user-policy-link"
+                                    href="#"
+                                    target="_blank"
+                                    >Privacy Policy</a
+                                >
+                            </span>
+                        </label>
+                    </div>
+
+                    <button class="modal-btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="./js/menu.js"></script>
     </body>
 </html>
