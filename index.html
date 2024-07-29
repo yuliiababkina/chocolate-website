@@ -24,7 +24,7 @@
         <header class="header">
             <div class="container header-container">
                 <nav class="header-navigation">
-                    <a class="header-logo" href="/">
+                    <a class="header-logo" href="./index.html">
                         <span class="logo-wrapper"
                             ><span class="header-logo-italic">Simply</span>
                             Chocolate</span
@@ -35,7 +35,9 @@
                     </a>
                     <ul class="header-navbar">
                         <li class="header-navbar-item current">
-                            <a class="header-navbar-link" href="/">Home</a>
+                            <a class="header-navbar-link" href="./index.html"
+                                >Home</a
+                            >
                         </li>
                         <li class="header-navbar-item">
                             <a class="header-navbar-link" href="#made"
@@ -88,7 +90,7 @@
                 </button>
             </div>
 
-            <div class="mobile-menu is-open" data-menu>
+            <div class="mobile-menu" data-menu>
                 <div>
                     <button
                         class="mobile-menu-close-btn"
@@ -607,7 +609,7 @@
                         </li>
                     </ul>
 
-                    <button class="review-button" type="button">
+                    <button class="review-button" type="button" data-modal-open>
                         Leave a review
                     </button>
                 </div>
@@ -672,9 +674,9 @@
                 </div>
             </div>
         </footer>
-        <div class="modal-backdrop">
+        <div class="modal-backdrop" data-modal>
             <div class="modal">
-                <button class="modal-close-btn" type="button">
+                <button class="modal-close-btn" type="button" data-modal-close>
                     <svg class="modal-close-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -693,8 +695,9 @@
                                 type="text"
                                 id="user-name"
                                 name="user-name"
+                                required
                             />
-                            <svg class="input-icon" width="17" height="17">
+                            <svg class="input-icon">
                                 <use href="./images/icons.svg#icon-user"></use>
                             </svg>
                         </div>
@@ -707,8 +710,9 @@
                                 type="email"
                                 id="user-email"
                                 name="user-email"
+                                required
                             />
-                            <svg class="input-icon" width="17" height="17">
+                            <svg class="input-icon">
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>
                         </div>
@@ -723,8 +727,9 @@
                                 type="tel"
                                 id="user-phone"
                                 name="user-phone"
+                                required
                             />
-                            <svg class="input-icon" width="17" height="17">
+                            <svg class="input-icon">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>
                         </div>
@@ -747,16 +752,17 @@
                             name="user-policy"
                             id="user-policy"
                             value="true"
+                            required
                         />
                         <label class="form-label" for="user-policy">
                             <span class="custom-checkbox">
                                 <svg
                                     class="checkbox-icon"
-                                    width="20"
-                                    height="20"
+                                    width="10"
+                                    height="10"
                                 >
                                     <use
-                                        href="./images/icons.svg#icon-checkbox-mob"
+                                        href="./images/icons.svg#icon-checkbox"
                                     ></use>
                                 </svg>
                             </span>
@@ -778,5 +784,6 @@
         </div>
 
         <script src="./js/menu.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
